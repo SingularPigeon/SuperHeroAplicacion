@@ -1,5 +1,5 @@
 ## Proyecto Super Hero
-#### [Visualiza el landing completo aqui 🚀](https://github.com/SingularPigeon/SuperHeroAplicacion/deployments/github-pages)
+#### [Visualiza el landing completo aqui 🚀](https://github.com/SingularPigeon/SuperHeroAplicacion/)
 ![](/assets/img/previewSuperHero.png)
 ***
 ### Descripción
