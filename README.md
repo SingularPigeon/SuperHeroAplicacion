@@ -1,6 +1,6 @@
 ## Proyecto Super Hero
 #### [Visualiza el landing completo aqui 🚀](https://singularpigeon.github.io/SuperheroAplicacion/)
-![](/assets/img/previewSuperhero.png)
+![](/assets/img/previewSuperHero.png)
 ***
 ### Descripción
 Desarrollo de una aplicación dinámica que permita a los usuarios buscar un Super Héroe o Super Heroína y visualizar información referente al personaje buscado.
