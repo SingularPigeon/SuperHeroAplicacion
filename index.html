@@ -16,7 +16,7 @@
     href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Passion+One:wght@400;700;900&display=swap"
     rel="stylesheet">
   <!-- Estilos locales -->
-  <link rel="stylesheet" href="assets/css/style2.css">
+  <link rel="stylesheet" href="assets/css/style.css">
   <title>Busca a tu Super Héroe o Super Héroina</title>
 </head>
 
@@ -41,19 +41,21 @@
     </div>
   </nav>
   <div class="section">
-    <div id="alert-container"></div>
     <div class="container mb-5">
       <div class="card border-0">
         <img src="assets/img/pexels-introspectivedsgn-7524996.jpg" alt="Polera super heroínas">
         <div class="card-img-overlay d-flex align-items-center p-0">
-          <div class="card-body bg-dark bg-opacity-50">
+          <div class="card-body bg-dark bg-opacity-50 text-center pb-4">
+            <h1 class="passion-one-regular text-light pb-3">¡Busca a tu super Héroe o Heroína!</h1>
             <form id="formulario" class="d-flex justify-content-center" role="search">
-              <div class="col-4">
-                <input id="numHeroe" class="form-control me-2 shadow-lg fs-4" type="search"
-                  placeholder="Buscar Super Héroe / Heroína" aria-label="Buscar">
-              </div>
-              <div class="col-2 text-end">
-                <button class="btn btn-danger shadow-lg passion-one-regular fs-4" type="submit">Buscar</button>
+              <div class="row d-flex">
+                <div class="col-auto">
+                  <input id="numHeroe" class="form-control me-2 shadow-lg fs-5" type="search"
+                    placeholder="Buscar" aria-label="Buscar">
+                </div>
+                <div class="col-auto">
+                  <button class="btn btn-danger shadow-lg passion-one-regular fs-5" type="submit">Buscar</button>
+                </div>
               </div>
             </form>
           </div>
@@ -61,16 +63,16 @@
       </div>
     </div>
   </div>
-  <div class="container mb-3">
-    <div class="row d-flex">
-      <div class="col-md-6 heroe">
+  <div class="container mb-3 mx-auto">
+    <div class="row d-flex flex-column align-items-center justify-content-center mx-auto">
+      <div class="col-md heroe">
         <!-- Plugin -->
       </div>
       <!-- <div id="heroCard"></div> -->
-      <div id="chartContainer" class="col-md-6 mt-4 text-center">
+      <div id="chartContainer" class="col-md mt-4 text-center">
         <!-- Gráfico de powerstats de super hero -->
       </div>
-
+      
     </div>
   </div>
 

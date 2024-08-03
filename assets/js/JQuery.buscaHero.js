@@ -35,23 +35,25 @@ jQuery.fn.buscaHero = function(token, idNumber) {
             <img src="${response.image.url}" class="img rounded-start h-100 w-100 object-fit-cover" alt="...">
           </div>
           <div class="col-md-6 text-bg-dark">
+          <div class="card-header p-4 border-bottom-1 border-danger-subtle">
+            <h2 class="card-title">${response.name}</h2>
+            <h3 class="card-title">${response.biography["full-name"]}</h3>
+            <p class="card-text fs-4">${response.biography["place-of-birth"]}</p>
+            <p class="card-text fs-5"> Aliases: ${response.biography["aliases"].join(', ')}</p>
+            <p class="card-text fs-5"> Conexiones: ${response.connections.relatives}</p>
+          </div>
             <div class="card-body p-4">
-              <h2 class="card-title">${response.name}</h2>
-              <h3 class="card-title">${response.biography["full-name"]}</h3>
-              <p class="card-title">${response.biography["place-of-birth"]}</p>
-              <p class="card-text">Aliases: ${response.biography.aliases}</p>
-              <p class="card-text">Conexiones: ${response.connections.relatives}</p>
-              <em class="card-text"><small>Publicado por: ${response.biography.publisher}</small></em>
-              <hr class="border border-light border-1 opacity-50">
-              <p class="list-group-item border-0">Ocupación: ${response.work.occupation}</p>
-              <p class="list-group-item border-0">Primera Aparición: ${response.biography["first-appearance"]}</p>
-              <p class="list-group-item border-0">Altura: ${response.appearance.gender}</p>
-              <p class="list-group-item border-0">Raza: ${response.appearance.race}</p>
-              <span class="list-group-item border-0">Altura: ${response.appearance.height[1]}</span>
-              <span class="list-group-item border-0">Peso: ${response.appearance.weight[1]}</span>
-              <hr class="border border-light border-1 opacity-50">
-              <p class="list-group-item border-0">Alianzas: ${response.connections["group-affiliation"]}</p>
-            </div>
+              <p class="card-text fs-5"> Ocupación: ${response.work.occupation}</p>
+              <p class="card-text fs-5"> Primera Aparición: ${response.biography["first-appearance"]}</p>
+              <p class="card-text fs-5"> Género: ${response.appearance.gender}</p>
+              <p class="card-text fs-5"> Raza: ${response.appearance.race}</p>
+              <span class="me-3 card-text fs-5">Altura: ${response.appearance["height"].join(' | ')}</span>
+              <span class="card-text fs-5">Peso: ${response.appearance["weight"].join(' | ')}</span>
+              <p class="card-text fs-5">Alianzas: ${response.connections["group-affiliation"]}</p>
+              </div>
+              <div class="card-footer border-top-1 border-danger-subtle">
+              <em class="card-tex pt-4"><small> Publicado por: ${response.biography.publisher}</small></em>
+              </div>
           </div>
         </div>
       </div>
